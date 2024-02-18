@@ -1,6 +1,6 @@
 TARGET: my_ngram
 OBJ: ngram.o
-SRC: ngram.c
+SRC: my_ngram.c
 CFLAGS: -Wall -Wextra -Werror
 
 .PHONY: all clean fclean re
