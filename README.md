@@ -23,14 +23,10 @@ And this will display one per line, each character and the number of times it ap
 ## Examples
 Here is an example of how to use the program:
 
-$>./my_ngram "abcdef"
-a:1
-b:1
-c:1
-d:1
-e:1
-f:1
+$>./my_ngram "        "
+ :8
 $>
+8 spaces :-)
 
 ## License
 This project is not licensed under anything MIT like license stuff.
