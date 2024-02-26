@@ -29,6 +29,9 @@ b:3
 c:1
 $>
 
+$>./my_ngram "        "
+ :8
+$>
 8 spaces :-)
 ````
 ## License
