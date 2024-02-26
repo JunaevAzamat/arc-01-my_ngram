@@ -22,10 +22,13 @@ And this will display one per line, each character and the number of times it ap
 
 ## Examples
 Here is an example of how to use the program:
-
-$>./my_ngram "        "
- :8
+```bash
+$>./my_ngram "aaabb" "abc"
+a:4
+b:3
+c:1
 $>
+
 8 spaces :-)
 
 ## License
