@@ -1,5 +1,5 @@
 TARGET: my_ngram
-OBJ: ngram.o
+OBJ: my_ngram.o
 SRC: my_ngram.c
 CFLAGS: -Wall -Wextra -Werror
 
