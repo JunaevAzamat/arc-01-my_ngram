@@ -4,17 +4,18 @@
 
 This provided code is called `"Ngram"`. It accepts strings, numbers and spaces counts them through a loop and calculates the number of characters entered and outputs it to the terminal. This is the main function of my code.
 
-Library: `<stdio.h>`- standart input output; `<stdlib.h>` -  is the header for the General Purpose Standard Library of C Programming language. It is used to print the strings, integer, character etc on the output screen; `<unistd.h>` - for the sleep() function; `<ctype.h>`- header file of the C Standard Library declares several functions that are useful for testing and mapping characters. All the functions accepts int as a parameter, whose value must be EOF or representable as an unsigned char.
+Library: `<stdio.h>`- standart input output; `<stdlib.h>` -  is the header for the General Purpose Standard Library of C Programming language. It is used to print the strings, integer, character etc on the output screen; `<unistd.h>` - for the sleep() function; `<ctype.h>`- header file of the C Standard Library declares several functions that are useful for testing and mapping characters. All the functions accepts int as a parameter, whose value must be EOF or representable as an unsigned char; `<string.h` - is a standard header file in the C language that contains functions for manipulating strings, arrays of characters.
 
 # Description
 
-The `int main()` function accepts command-line arguments as parameters. An integer array is opened using calloc, a pointer to characters is opened, and `argv[1]` is set to it.
+The `int main()` function accepts command line arguments as parameters. An integer array is opened using calloc.
 
- Again in int main() it checks whether a character is entered after `./a.out` and if not it warns the user and returns 1.
-
+ Again, int main() checks if a character is entered after `./a.out` and if not, warns the user and returns 1.
  The `free()` function closes an array opened for an array of integers
 
-The `counting_characters()`: function accepts order string arguments by parameter, an integer representing the number of characters,and reads the characters using a binary loop until the index of the characters is equal to `'\0'`. In the inner loop and calculates the value of the index by multiplying it by 256 and adding the ASCII value of the character.Basically this code reads numbers and letters and determines how many the count is.Also, in this function, a code is added to check whether the character entered through the conditional operator is a space. That is, this code works for spaces as well.I am a control from the `tolower()` function. This function converts uppercase letters to lowercase letters.
+`counting_characters()` function: This function takes as an argument a string argument representing the number of characters. I read multiple words, i.e. continue even if NULL is encountered, i.e. I changed the loops to read the next one as well. In the inner loop, and calculates the index value by multiplying it by 256 and adding the ASCII value of the character. Basically this code reads numbers and letters and determines how much the bill is. This function also adds code to check whether the character entered via the conditional operator is a space or not. That said, this code works for spaces as well. I am a handler from the "tolower()" function. This function converts uppercase letters to lowercase letters.
+
+ Calculating string length is convenient with size_t so I used it in my code
 
  Next, using a for loop, it prints the character and the number representing how many times it is repeated
 
